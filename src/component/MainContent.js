@@ -1,6 +1,7 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import WrapCulture from "./WrapCulture";
+import Etc from "./etc";
 
 function MainContent() {
     return (
@@ -204,6 +205,8 @@ function MainContent() {
                 <strong className="content2-text">기술과 사람으로 더 나은 세상을 만듭니다</strong>
                 <a href="#" className="content2-link">카카오문화 바로가기 <IoArrowForwardOutline style={{marginTop:'', fontSize:'17px'}} /></a>
             </div>
+            <Etc></Etc>
+            <a href="#" className="link_collection">카카오 소식 모아보기</a>
         </div>
     )
 
