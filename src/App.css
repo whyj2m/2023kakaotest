@@ -58,7 +58,7 @@ strong>a {
   float: left;
 }
 
-.wrap-content {
+.wrap-content-head {
   text-align: center;
 }
 
@@ -249,9 +249,9 @@ strong>a {
 }
 
 .inner-item {
-  border: 1px solid black;
   margin-top: 35px;
   border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .item-card .info-card {
@@ -261,7 +261,7 @@ strong>a {
   left: 0;
   right: 65px;
   height: 19px;
-  margin-top: 18px;
+  margin-top: 52px;
   padding-left: 24px;
   font-weight: 300;
   font-size: 13px;
@@ -301,6 +301,147 @@ strong>a {
 .item-card .item-thumb img {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+
+/* --------------------------------------- Main Content Left done ------------------------- */
+
+.inner-item-right {
+  position: relative;
+  height: 819px;
+  margin-top: 35px;
+}
+
+.item-card-right {
+  overflow: hidden;
+  position: absolute;
+  width: 297px;
+  /* margin-top: 36px; */
+  border-radius: 14px;
+  background-color: var(--colorBg10);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item-card-right .wrap-content {
+  height: 192px;
+  outline-offset: -2px;
+}
+
+.wrap-content .item-icon img {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.text-card-right {
+  max-height: 56px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.item-card-right .info-card-right {
+  overflow: hidden;
+  /* position: absolute; */
+  top: 143px;
+  left: 0;
+  right: 65px;
+  height: 19px;
+  margin-top: 18px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--colorFg25);
+}
+
+.text-card-right-4 {
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+  height: auto;
+  margin-left: 20px;
+  padding: 8px 20px 8px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  background-color: #fee102;
+}
+
+.item-card-right .list-cs {
+  margin: 12px -24px 9px;
+  font-size: 0;
+  text-align: center;
+}
+
+.item-card-right .list-cs li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.item-card-right .list-cs .link-cs {
+  display: block;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 42px;
+  color: var(--colorFg12);
+  background-color: var(--colorBg6);
+}
+
+.text-date {
+  display: inline-block;
+  margin: 8px 0 0 6px;
+  font-size: 14px;
+  color: var(--colorFg24);
+  letter-spacing: -1px;
+}
+
+.item-thumb-right {
+  display: block;
+  height: 166px;
+  margin-top: 15px;
+}
+
+.thumb-right {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* --------------------------------------MainContent2 ------------------------------------- */
+
+.maincontent .section-content2{
+  height: 540px;
+  margin: 36px 18px;
+  padding: 54px 66px 0;
+  border-radius: 14px;
+  font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 2px 5px 40px 0 rgba(0,0,0,.08);
+  box-sizing: border-box;
+}
+.maincontent .section-content2 .content2-text {
+  display: block;
+  font-size: 42px;
+  line-height: 62px;
+  color: #000;
+}
+.maincontent .section-content2 .content2-link {
+  display: inline-block;
+    height: 33px;
+    margin-top: 36px;
+    padding: 9px 20px 0;
+    border-radius: 42px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #000;
+    vertical-align: top;
 }
 
 /* ----------------------------------- footer ------------------------------------------------ */
