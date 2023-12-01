@@ -1,6 +1,5 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoArrowForwardOutline } from "react-icons/io5";
-import WrapCulture from "./WrapCulture";
 import Etc from "./etc";
 
 
