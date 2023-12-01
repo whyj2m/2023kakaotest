@@ -1,5 +1,8 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import WrapCulture from "./WrapCulture";
+import Etc from "./etc";
+
 
 function MainContent() {
     return (
@@ -488,6 +491,8 @@ function MainContent() {
                     </div>
                 </div>
             </div>
+            <Etc></Etc>
+            <a href="#" className="link_collection">카카오 소식 모아보기</a>
         </div>
     )
 
