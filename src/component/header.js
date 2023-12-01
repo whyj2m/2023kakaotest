@@ -1,30 +1,41 @@
 import { IoSearchOutline } from "react-icons/io5";
 import { ImEarth } from "react-icons/im";
 import { PiMoonLight } from "react-icons/pi";
+import { useState } from "react";
 
 
-function header() {
+function Header() {
+    const [hoveredIndex, setHoveredIndex] = useState(-1);
+
+    const handleHover = (index) => {
+        setHoveredIndex(index);
+    };
+
+    const menuItems = [
+        { label: '소개', link: '#' },
+        { label: '이야기', link: '#' },
+        { label: '뉴스', link: '#' },
+        { label: '기술과 서비스', link: '#' },
+        { label: '약속과 책임', link: '#' },
+    ];
     return (
         <div className="header">
             <div className="wrap-header">
                 <a href="/"><h1 className="wrap-title">KAKAO</h1></a>
                 <nav className="wrap-content-head">
                     <ul className="wrap-list">
-                        <li>
-                            <a href="#">소개</a>
-                        </li>
-                        <li>
-                            <a href="#">이야기</a>
-                        </li>
-                        <li>
-                            <a href="#">뉴스</a>
-                        </li>
-                        <li>
-                            <a href="#">기술과 서비스</a>
-                        </li>
-                        <li>
-                            <a href="#">약속과 책임</a>
-                        </li>
+                        {
+                            menuItems.map((item, index) => (
+                                <li
+                                    key={index}
+                                    onMouseEnter={() => handleHover(index)}
+                                    onMouseLeave={() => handleHover(-1)}
+                                    style={{ color: index === hoveredIndex ? '#000' : '#666' }}
+                                >
+                                    <a href={item.link}>{item.label}</a>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </nav>
                 <div className="util">
@@ -46,4 +57,4 @@ function header() {
     )
 }
 
-export default header;
+export default Header;
