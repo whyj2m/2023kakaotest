@@ -172,6 +172,7 @@ strong>a {
   max-width: 666px;
   padding: 0 18px;
   box-sizing: border-box;
+  width: 100%;
 
 
 }
@@ -260,11 +261,11 @@ strong>a {
 .item-card .info-card {
   overflow: hidden;
   position: absolute;
-  top: 143px;
+  top: 155px;
   left: 0;
   right: 65px;
   height: 19px;
-  margin-top: 52px;
+  /* margin-top: 52px; */
   padding-left: 24px;
   font-weight: 300;
   font-size: 13px;
@@ -446,6 +447,120 @@ strong>a {
     background-color: #000;
     vertical-align: top;
 }
+.maincontent .section-content2 .content2-image {
+  display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 50px auto 0;
+}
+/* --------------------------------------------section - sns -----------------------------------*/
+.section-sns {
+  display: flex;
+    justify-content: space-between;
+    height: 116px;
+    padding: 28px 36px;
+    margin: 36px 18px;
+    border-radius: 14px;
+    font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    background-color: var(--colorBg10);
+    text-align: center;
+    box-shadow: 2px 5px 40px 0 rgba(0,0,0,.08);
+    box-sizing: border-box;
+}
+.section-sns .text-sns {
+  margin-top: 8px;
+  font-size: 32px;
+  color: var(--baseForeground);
+}
+.section-sns .inner-sns li {
+  display: inline-block;
+}
+.section-sns .inner-sns li > a {
+  display: inline-block;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  background-position-y: 0;
+  text-indent: -9999px;
+  background: url(../public/images/sns.png) 0 0/317px no-repeat;
+}
+.section-sns .inner-sns li~li{
+  margin-left: 10px;
+}
+.section-sns .inner-sns li .link {
+  background-position-x: 0;
+}
+.section-sns .inner-sns li .link-youtube {
+  background-position-x: -64px;
+}
+.section-sns .inner-sns li .link-insta {
+  background-position-x: -128px;
+}
+.section-sns .inner-sns li .link-face{
+  background-position-x: -192px;
+}
+.section-sns .inner-sns li .link-in {
+  background-position-x: -256px;
+}
+
+/* --------------------------------------- section content3-------------------------------------- */
+.section-content3{
+  display: flex;
+  flex-wrap: wrap;
+}
+.inner-item3 .item-card{
+  width: 297px;
+}
+/* 엉킨거 css 오류 잡으려고 어쩔수없이 설정 */
+.section-content3 .wrap-item .inner-item3 .wrap-content {
+  height: 192px;
+  outline-offset: -2px;
+  display: block;
+  position: relative;
+  padding: 25px 24px 0;
+  box-sizing: border-box;
+  width: 297px;
+  border-radius: 14px;
+  box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09)
+}
+.section-content3 .wrap-item .inner-item3 .wrap-content-big{
+  height: 100%;
+  outline-offset: -2px;
+  display: block;
+  position: relative;
+    box-sizing: border-box;
+  width: 297px;
+  border-radius: 14px;
+  box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09)
+}
+.section-content3 .wrap-item .inner-item3 .wrap-content-big img{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.text-card-stock {
+    display: flex;
+    max-height: none;
+    margin-top: 18px;
+    font-weight: 400;
+    font-family: KakaoSmall,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: -1px;
+    align-items: center;
+}
+.triangle {
+  width: auto;
+  margin-top: 8px;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 7px solid #2879ff;
+}
+.inner-item-sticky{
+  border-radius: 20px;
+  box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09);
+}
+
 
 /* ----------------------------------- etc ------------------------------------------------ */
 
