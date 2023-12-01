@@ -8,7 +8,7 @@ function header() {
         <div className="header">
             <div className="wrap-header">
                 <a href="/"><h1 className="wrap-title">KAKAO</h1></a>
-                <nav className="wrap-content">
+                <nav className="wrap-content-head">
                     <ul className="wrap-list">
                         <li>
                             <a href="#">소개</a>
